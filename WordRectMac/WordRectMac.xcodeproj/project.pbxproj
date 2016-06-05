@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6047F4215ED0BC500201310 /* TrieNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6047F4115ED0BC500201310 /* TrieNode.cpp */; };
+		C6047F5015EE00EB00201310 /* WordTrie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6047F4F15EE00EB00201310 /* WordTrie.cpp */; };
+		C6047F9B15EF2ECA00201310 /* WordRectFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6047F9A15EF2ECA00201310 /* WordRectFinder.cpp */; };
+		C6047FAD15EFA88B00201310 /* wordRectSearchMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6047FAC15EFA88B00201310 /* wordRectSearchMgr.cpp */; };
+		C604802215F0834500201310 /* WordWaffleFinderSearchA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C604801E15F0834500201310 /* WordWaffleFinderSearchA.cpp */; };
+		C604802315F0834500201310 /* WordLatticeFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C604801F15F0834500201310 /* WordLatticeFinder.cpp */; };
+		C604802415F0834500201310 /* WordWaffleFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C604802015F0834500201310 /* WordWaffleFinder.cpp */; };
+		C60480BC15F30DEE00201310 /* wordRectMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C60480BB15F30DEE00201310 /* wordRectMain.cpp */; };
+		C664EBEE1618C13900887989 /* wordPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C664EBED1618C13900887989 /* wordPlatform.cpp */; };
+		C69326561626FE4B007E0825 /* tst3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C69326541626FE4B007E0825 /* tst3.cpp */; };
+		C69326571626FE4B007E0825 /* TracNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C69326551626FE4B007E0825 /* TracNode.cpp */; };
+		C6DC3B6F1613D323009AF1D4 /* wordRectSearchExec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3B671613D323009AF1D4 /* wordRectSearchExec.cpp */; };
+		C6DC3B701613D323009AF1D4 /* CharFreqMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3B691613D323009AF1D4 /* CharFreqMap.cpp */; };
+		C6DC3B711613D323009AF1D4 /* CharMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3B6A1613D323009AF1D4 /* CharMap.cpp */; };
+		C6DC3B721613D323009AF1D4 /* TrixNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3B6C1613D323009AF1D4 /* TrixNode.cpp */; };
+		C6DC3C621615471B009AF1D4 /* WordRectPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3C601615471B009AF1D4 /* WordRectPrinter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C6047F4015ED0BC500201310 /* TrieNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrieNode.hpp; sourceTree = "<group>"; };
+		C6047F4115ED0BC500201310 /* TrieNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrieNode.cpp; sourceTree = "<group>"; };
+		C6047F4E15EE00EB00201310 /* WordTrie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordTrie.hpp; sourceTree = "<group>"; };
+		C6047F4F15EE00EB00201310 /* WordTrie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordTrie.cpp; sourceTree = "<group>"; };
+		C6047F9915EF2ECA00201310 /* WordRectFinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordRectFinder.hpp; sourceTree = "<group>"; };
+		C6047F9A15EF2ECA00201310 /* WordRectFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordRectFinder.cpp; sourceTree = "<group>"; };
+		C6047F9E15EF2F6800201310 /* wordRectSearchMgr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wordRectSearchMgr.hpp; sourceTree = "<group>"; };
+		C6047FAC15EFA88B00201310 /* wordRectSearchMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wordRectSearchMgr.cpp; sourceTree = "<group>"; };
+		C604801D15F0834500201310 /* WordWaffleFinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordWaffleFinder.hpp; sourceTree = "<group>"; };
+		C604801E15F0834500201310 /* WordWaffleFinderSearchA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordWaffleFinderSearchA.cpp; sourceTree = "<group>"; };
+		C604801F15F0834500201310 /* WordLatticeFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordLatticeFinder.cpp; sourceTree = "<group>"; };
+		C604802015F0834500201310 /* WordWaffleFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordWaffleFinder.cpp; sourceTree = "<group>"; };
+		C604802115F0834500201310 /* WordLatticeFinder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordLatticeFinder.hpp; sourceTree = "<group>"; };
+		C60480BB15F30DEE00201310 /* wordRectMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wordRectMain.cpp; sourceTree = "<group>"; };
+		C62036D316D973DD001E4C27 /* Stacks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stacks; sourceTree = BUILT_PRODUCTS_DIR; };
+		C664EBED1618C13900887989 /* wordPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wordPlatform.cpp; sourceTree = "<group>"; };
+		C69326531626FE4B007E0825 /* TracNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TracNode.hpp; sourceTree = "<group>"; };
+		C69326541626FE4B007E0825 /* tst3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tst3.cpp; sourceTree = "<group>"; };
+		C69326551626FE4B007E0825 /* TracNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TracNode.cpp; sourceTree = "<group>"; };
+		C6D5975F161736A700299FA7 /* wordPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordPlatform.h; sourceTree = "<group>"; };
+		C6DC3B661613D323009AF1D4 /* wordRectSearchExec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wordRectSearchExec.hpp; sourceTree = "<group>"; };
+		C6DC3B671613D323009AF1D4 /* wordRectSearchExec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wordRectSearchExec.cpp; sourceTree = "<group>"; };
+		C6DC3B681613D323009AF1D4 /* CharMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CharMap.hpp; sourceTree = "<group>"; };
+		C6DC3B691613D323009AF1D4 /* CharFreqMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharFreqMap.cpp; sourceTree = "<group>"; };
+		C6DC3B6A1613D323009AF1D4 /* CharMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharMap.cpp; sourceTree = "<group>"; };
+		C6DC3B6B1613D323009AF1D4 /* TrixNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TrixNode.hpp; sourceTree = "<group>"; };
+		C6DC3B6C1613D323009AF1D4 /* TrixNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrixNode.cpp; sourceTree = "<group>"; };
+		C6DC3B6D1613D323009AF1D4 /* wordTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wordTypes.h; sourceTree = "<group>"; };
+		C6DC3B6E1613D323009AF1D4 /* wordRectMain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wordRectMain.hpp; sourceTree = "<group>"; };
+		C6DC3BCD16140B56009AF1D4 /* CharFreqMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CharFreqMap.hpp; sourceTree = "<group>"; };
+		C6DC3C5F1615471B009AF1D4 /* WordRectPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordRectPrinter.hpp; sourceTree = "<group>"; };
+		C6DC3C601615471B009AF1D4 /* WordRectPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordRectPrinter.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = Stacks;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C69326531626FE4B007E0825 /* TracNode.hpp */,
+				C69326541626FE4B007E0825 /* tst3.cpp */,
+				C69326551626FE4B007E0825 /* TracNode.cpp */,
+				C664EBED1618C13900887989 /* wordPlatform.cpp */,
+				C6D5975F161736A700299FA7 /* wordPlatform.h */,
+				C6DC3C5F1615471B009AF1D4 /* WordRectPrinter.hpp */,
+				C6DC3C601615471B009AF1D4 /* WordRectPrinter.cpp */,
+				C6DC3BCD16140B56009AF1D4 /* CharFreqMap.hpp */,
+				C6DC3B661613D323009AF1D4 /* wordRectSearchExec.hpp */,
+				C6DC3B671613D323009AF1D4 /* wordRectSearchExec.cpp */,
+				C6DC3B681613D323009AF1D4 /* CharMap.hpp */,
+				C6DC3B691613D323009AF1D4 /* CharFreqMap.cpp */,
+				C6DC3B6A1613D323009AF1D4 /* CharMap.cpp */,
+				C6DC3B6B1613D323009AF1D4 /* TrixNode.hpp */,
+				C6DC3B6C1613D323009AF1D4 /* TrixNode.cpp */,
+				C6DC3B6D1613D323009AF1D4 /* wordTypes.h */,
+				C6DC3B6E1613D323009AF1D4 /* wordRectMain.hpp */,
+				C60480BB15F30DEE00201310 /* wordRectMain.cpp */,
+				C604801D15F0834500201310 /* WordWaffleFinder.hpp */,
+				C604801E15F0834500201310 /* WordWaffleFinderSearchA.cpp */,
+				C604801F15F0834500201310 /* WordLatticeFinder.cpp */,
+				C604802015F0834500201310 /* WordWaffleFinder.cpp */,
+				C604802115F0834500201310 /* WordLatticeFinder.hpp */,
+				C6047FAC15EFA88B00201310 /* wordRectSearchMgr.cpp */,
+				C6047F9E15EF2F6800201310 /* wordRectSearchMgr.hpp */,
+				C6047F9915EF2ECA00201310 /* WordRectFinder.hpp */,
+				C6047F9A15EF2ECA00201310 /* WordRectFinder.cpp */,
+				C6047F4E15EE00EB00201310 /* WordTrie.hpp */,
+				C6047F4F15EE00EB00201310 /* WordTrie.cpp */,
+				C6047F4015ED0BC500201310 /* TrieNode.hpp */,
+				C6047F4115ED0BC500201310 /* TrieNode.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C62036D316D973DD001E4C27 /* Stacks */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* WordRectMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "WordRectMac" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordRectMac;
+			productInstallPath = "$(HOME)/bin";
+			productName = Stacks;
+			productReference = C62036D316D973DD001E4C27 /* Stacks */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "WordRectMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Stacks */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* WordRectMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6047F4215ED0BC500201310 /* TrieNode.cpp in Sources */,
+				C6047F5015EE00EB00201310 /* WordTrie.cpp in Sources */,
+				C6047F9B15EF2ECA00201310 /* WordRectFinder.cpp in Sources */,
+				C6047FAD15EFA88B00201310 /* wordRectSearchMgr.cpp in Sources */,
+				C604802215F0834500201310 /* WordWaffleFinderSearchA.cpp in Sources */,
+				C604802315F0834500201310 /* WordLatticeFinder.cpp in Sources */,
+				C604802415F0834500201310 /* WordWaffleFinder.cpp in Sources */,
+				C60480BC15F30DEE00201310 /* wordRectMain.cpp in Sources */,
+				C6DC3B6F1613D323009AF1D4 /* wordRectSearchExec.cpp in Sources */,
+				C6DC3B701613D323009AF1D4 /* CharFreqMap.cpp in Sources */,
+				C6DC3B711613D323009AF1D4 /* CharMap.cpp in Sources */,
+				C6DC3B721613D323009AF1D4 /* TrixNode.cpp in Sources */,
+				C6DC3C621615471B009AF1D4 /* WordRectPrinter.cpp in Sources */,
+				C664EBEE1618C13900887989 /* wordPlatform.cpp in Sources */,
+				C69326561626FE4B007E0825 /* tst3.cpp in Sources */,
+				C69326571626FE4B007E0825 /* TracNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = Stacks;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Stacks;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = _DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "WordRectMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "WordRectMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
