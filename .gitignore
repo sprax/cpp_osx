@@ -188,3 +188,11 @@ DerivedData
 *.exe
 *.out
 *.app
+
+#xCode specific
+*.xcworkspacedata
+*.xcuserstate
+*.xcsettings
+*.xcbkptlist
+*.xcscheme
+xcschememanagement.plist
