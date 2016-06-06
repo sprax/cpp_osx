@@ -367,7 +367,7 @@ void WordRectSearchMgr<MapT>::sigintHandler ( int sig )
     timeLastSigint = timeNow - timeLastSigint;      // seconds since last call
     if (timeLastSigint < 2) {
         printf("sigintHandler: time difference < 2 seconds -- bye bye!\n");
-        exit(0);
+        _exit(0);
     }
 
     time_t elapsedTime = timeNow - getSearchStartTime();
