@@ -15,12 +15,12 @@ static const char *sThreadModel = "Windows";        // TODO: get specific
 
 #else
 
-#if defined(__GNUC__) 
-static const char *sThreadModel = "Posix";    // TODO: threading for non-Windows
+#if defined(__GNUC__)
+static const char *sThreadModel = "Posix";    // TODO: threading for other non-Windows?
 #elif defined(__APPLE__) 
-static const char *sThreadModel = "NSThreads";    // TODO: threading for non-Windows
+static const char *sThreadModel = "NSThreads";
 #else
-static const char *sThreadModel = "Unknown";    // TODO: threading for non-Windows
+static const char *sThreadModel = "Unknown";
 #endif
 
 #include <ctime>

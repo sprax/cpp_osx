@@ -167,7 +167,7 @@ uint CharFreqMap::extractFirstWord(char *line)
             break;
         }
     }
-    uint   length = ptrSigned - line;   // pointer arithmetic
+    uint   length = uint(ptrSigned - line);   // pointer arithmetic
     return length;
 }
 

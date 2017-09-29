@@ -32,7 +32,7 @@ typedef int  DWORD;
 typedef bool BOOL;
 typedef long LONG;
 typedef unsigned long (*LPTHREAD_START_ROUTINE)(void *pvArgs);
-static  const int INVALID_HANDLE_VALUE = NULL;
+static  const int INVALID_HANDLE_VALUE = 0;
 
 typedef int CRITICAL_SECTION;
 #define InitializeCriticalSection(A) ;

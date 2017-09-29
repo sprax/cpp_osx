@@ -290,7 +290,7 @@ public:
         printf("idx let letCnt brnCnt max \n");
         for (uint jC = 0; jC < targetSize; jC++) {
             printf("\n%3d  %c   nodeC branchC   aveBPN   maxBPN\n", jC, freqMap.getCharFreqPair(jC).mChar);
-            for(uint depth = 1, endDepth = letterPosCounts[jC].size(); depth < endDepth; depth++) {
+            for(unsigned long depth = 1, endDepth = letterPosCounts[jC].size(); depth < endDepth; depth++) {
                 uint numer = branchPosCounts[jC][depth];
                 uint denom = letterPosCounts[jC][depth];
                 double ave = denom > 0 ? (double) numer / denom : 0.0;

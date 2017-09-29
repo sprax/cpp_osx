@@ -299,7 +299,7 @@ uint WordRectSearchExec::initFromSortedDictionaryFile(const char *fileSpec, cons
         }
 
         // filter by word length
-        length = ptrSigned - line;   // pointer arithmetic
+        length = uint(ptrSigned - line);   // pointer arithmetic
         if (length < minWordLength || maxWordLength < length)
             continue;
 

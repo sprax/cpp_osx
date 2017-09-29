@@ -10,10 +10,11 @@
  * delimited by the beginning or end of the array or by non-word-forming
  * characters, such as whitespace or punctuation.
  */
+
 //private:
 /** Is an unsigned char that is greater than Space a punctuation character
- *   for purposes of word boundary detection? */ 
-static inline bool isUchrGtSpacePunct(uchr uc) { return (uc < '0' || ('9' < uc && uc < 'A')); }
+ *  for purposes of word boundary detection? */
+static inline bool isUchrGtSpacePunct(uchr uc) { return ('9' < uc && uc < 'A'); }
 
 //  WordTrie Parse States
 
@@ -48,7 +49,7 @@ int WordTrie<MapT, NodeT>::addLineWordsToTrie(WordTrie<MapT, NodeT> *trie, char 
                 if (valUnsigned <= CharFreqMap::sBegChar) {
                     // Up to here, this sub-string's chars are all mapped, so if it is long 
                     // enough, NULL-terminate it and add it to the trie as a valid word.  
-                    uint wordLength = ptrSigned - pBegWord;
+                    uint wordLength = (uint)(ptrSigned - pBegWord);
                     if (minWordLength <= wordLength && wordLength <= maxWordLength) {
                         *ptrSigned = '\0';
                         if (trie->insertWord(pBegWord, NULL)) {
@@ -69,7 +70,7 @@ int WordTrie<MapT, NodeT>::addLineWordsToTrie(WordTrie<MapT, NodeT> *trie, char 
                         // but leave the state as invalid, so that actual white space must be found before the next word.
                         // But if any punctuation chars are mapped, they can appear inside words, e.g. "hyphen-mark".
                         if (isUchrGtSpacePunct(valUnsigned)) {
-                            uint wordLength = ptrSigned - pBegWord;
+                            uint wordLength = uint(ptrSigned - pBegWord);
                             if (minWordLength <= wordLength && wordLength <= maxWordLength) {
                                 *ptrSigned = '\0';
                                 if (trie->insertWord(pBegWord, NULL)) {
