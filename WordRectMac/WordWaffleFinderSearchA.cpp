@@ -3,8 +3,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "WordWaffleFinder.hpp"
-#include "wordRectPrinter.hpp"
-#include "wordRectSearchMgr.hpp"
+#include "WordRectPrinter.hpp"
+#include "WordRectSearchMgr.hpp"
 
 template <typename MapT>
 int WordWaffleFinder<MapT>::findWordRowsUsingTrieLinksA(int)

@@ -4,7 +4,7 @@
 
 #include "WordWaffleFinder.hpp"
 #include "WordRectPrinter.hpp"
-#include "wordRectSearchMgr.hpp"
+#include "WordRectSearchMgr.hpp"
 
 template <typename MapT>
 void WordWaffleFinder<MapT>::initRowsAndCols()

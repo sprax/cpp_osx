@@ -3,7 +3,7 @@
 
 #include "WordLatticeFinder.hpp"
 #include "WordRectPrinter.hpp"
-#include "wordRectSearchMgr.hpp"
+#include "WordRectSearchMgr.hpp"
 
 #if DEFINE_METHODS_IN_CPP
 template <typename MapT>
