@@ -1,4 +1,4 @@
-// WordRectFinder.cpp : find word rectangle of the specified dimensions 
+// WordRectFinder.cpp : find word rectangle of the specified dimensions (central algorithm)
 // Sprax Lines, July 2010
 
 #include "WordTrie.hpp"

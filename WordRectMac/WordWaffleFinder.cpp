@@ -1,4 +1,4 @@
-// WordWaffleFinder.cpp : find word rectangle of the specified dimensions 
+// WordWaffleFinder.cpp : find word waffle of the specified dimensions 
 // Sprax Lines, July 2010
 ////////////////////////////////////////////////////////////////////////////////
 

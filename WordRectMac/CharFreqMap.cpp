@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <functional>      // For greater<int>()
 #include <iostream>
+#include <unistd.h>
 
 // Constructor
 CharFreqMap::CharFreqMap(const char *fileSpec, uint minWordLength, uint maxWordLength, uint minCharCount)
@@ -57,6 +58,7 @@ int CharFreqMap::countRawCharFreqs(const char *fileSpec, uint charCounts[]
     rMinFoundWordLength = INT_MAX;
     rMaxFoundWordLength = 0;
     errno_t err = fopen_safe(&fi, fileSpec, "r");
+    printf("=~~~~~~~~= Working Directory: %s\n", getcwd(NULL, 0));
     if (0 == err) {
         printf("%s opened by %s\n" , fileSpec, __FUNCTION__);
     } else {

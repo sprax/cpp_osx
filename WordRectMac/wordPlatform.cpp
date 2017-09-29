@@ -4,6 +4,7 @@
 //  Sprax Lines, September 2012
 
 #include "wordPlatform.h"
+#include <unistd.h>
 
 #ifdef _MBCS	// Microsoft Compiler
 

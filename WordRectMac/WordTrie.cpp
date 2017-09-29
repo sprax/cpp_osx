@@ -2,6 +2,7 @@
 // Sprax Lines, July 2010
 
 #include "WordTrie.hpp"
+#include <unistd.h>
 
 /**
  * Extracts "words" -- that is, word-boundary delimited strings --
@@ -127,10 +128,14 @@ int WordTrie<MapT, NodeT>::addLineWordsToTrie(WordTrie<MapT, NodeT> *trie, char 
  * @return number of new words added.  Words already in the Trie, or outside the
  * specified length range don't count.
  */
+
+
 template <typename MapT, typename NodeT>
 int WordTrie<MapT, NodeT>::addAllWordsInTextFile(const char *fileSpec, WordTrie<MapT, NodeT> *trie, uint minWordLength, uint maxWordLength, int verbosity)
 {   
     uint numLineWordsAdded, numWordsAdded = 0;
+    
+    printf("============ Working Directory: %s\n", getcwd(NULL, 0));
     
     FILE *fi;
     if ( ! fopen_safe(&fi, fileSpec, "r") ) {

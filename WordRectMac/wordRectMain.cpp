@@ -18,8 +18,8 @@
 #include "WordRectSearchExec.hpp"
 
 // default values:
-static const char *sProgramName  = "wordRectMulti";
-static const char *defDictFile = "EnuWords.txt";
+static const char *sProgramName = "wordRectMulti";
+static const char *defDictFile  = "/Users/sprax/Text/Lex/Enu/enuWords.txt";
 static const uint  defMinTall   =   2;
 static const uint  defMaxTall   =  48;
 static const uint  defMinArea   =   4;

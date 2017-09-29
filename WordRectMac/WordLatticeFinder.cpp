@@ -1,4 +1,4 @@
-// WordLatticeFinder.cpp : find word rectangle of the specified dimensions 
+// WordLatticeFinder.cpp : find word lattice of the specified dimensions 
 // Sprax Lines, July 2010
 
 #include "WordLatticeFinder.hpp"
