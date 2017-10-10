@@ -1,4 +1,4 @@
-// CharFreqMap.cpp : trie nodes for word tries, 
+// CharFreqMap.cpp : trie nodes for word tries,
 
 #include "CharFreqMap.hpp"
 #include "wordPlatform.h"
@@ -45,9 +45,9 @@ uint CharFreqMap::countWordCharsInFile(const char *fileSpec, uint minCharCount, 
 /** Count the chars in the first word in each line of a text file.
 *  Count only chars > mMinChar (default minimum uchr == Space),
 *  and only in words in the specified range of word lengths.
-*  Sets the found minimum and maximum lengths of words found, 
+*  Sets the found minimum and maximum lengths of words found,
 *  even if lesser/greater than the min/maxWordLength arguments.
-*/	
+*/
 
 int CharFreqMap::countRawCharFreqs(const char *fileSpec, uint charCounts[]
 , const uint minWordLength,  const uint maxWordLength
@@ -106,7 +106,7 @@ uint CharFreqMap::initCharFreqPairs()
         }
     }
     // Set the domain spread once; this is the first and last place to set it.
-    assert(mMaxFoundUchr < sEndChar);                       // TODO: Make this a real warning (or error), not just an assert?  addLineWordsToTrie assumes char 255 is a non-word char  
+    assert(mMaxFoundUchr < sEndChar);                       // TODO: Make this a real warning (or error), not just an assert?  addLineWordsToTrie assumes char 255 is a non-word char
     mDomainSpread = mMaxFoundUchr - mMinFoundUchr + 1;      // Never changes.
     sort(mCharFreqPairs.begin(), mCharFreqPairs.end(), CharFreqGreater() );
     return mNumDistinctChars;
@@ -153,10 +153,10 @@ uint CharFreqMap::initRangeFromMinCharCount(uint minCharCount, int verbosity)
 }
 
 
-/** 
-*  Extract the word at the start of the input string by finding the first 
+/**
+*  Extract the word at the start of the input string by finding the first
 *  non-word character and NULL-terminating it there.
-*  Return the length of this null-terminated word string. 
+*  Return the length of this null-terminated word string.
 */
 uint CharFreqMap::extractFirstWord(char *line)
 {
@@ -180,8 +180,8 @@ int CharFreqMap::decideDefaultCharMapType()
     double asciiRatio = (double) 6.0 / 52.0;
     // If the percentage of holes is less than 1 percent worse than ASCII,
     // then index the trie branches using raw char values.  That is, just
-    // shift the chars to map mMinChar to index 0.  Otherwise, transform 
-    // the char values into contiguous indices, using some form of look-up 
+    // shift the chars to map mMinChar to index 0.  Otherwise, transform
+    // the char values into contiguous indices, using some form of look-up
     // table or some simple function.
     if (foundRatio > asciiRatio + 0.01) {   // TODO: magic number
         mDefaultSubType = CharMap::eCompactFreqFirst;
@@ -193,7 +193,7 @@ int CharFreqMap::decideDefaultCharMapType()
     return 0;
 }
 
-const CharMap	& CharFreqMap::makeDefaultCharMap()	
+const CharMap& CharFreqMap::makeDefaultCharMap()
 {
     switch (mDefaultSubType) {
     case CharMap::eCompactFreqFirst:
@@ -208,14 +208,14 @@ const CharMap	& CharFreqMap::makeDefaultCharMap()
     }
 }
 
-const IdentCharMap& CharFreqMap::makeIdentityCharMap()	
+const IdentCharMap& CharFreqMap::makeIdentityCharMap()
 {
     if (mIdentCharMap == NULL)
         mIdentCharMap =  new IdentCharMap(*this);
     return *mIdentCharMap;
 }
 
-const CompactCharMap& CharFreqMap::makeCompactCharMap()	
+const CompactCharMap& CharFreqMap::makeCompactCharMap()
 {
     if (mCompactCharMap == NULL) {
         mCompactCharMap =  new CompactCharMap(*this);
@@ -223,7 +223,7 @@ const CompactCharMap& CharFreqMap::makeCompactCharMap()
     return *mCompactCharMap;
 }
 
-const FreqFirstCharMap& CharFreqMap::makeFreqFirstCharMap(uint minCharCount)	
+const FreqFirstCharMap& CharFreqMap::makeFreqFirstCharMap(uint minCharCount)
 {
     if (mFreqFirstCharMap == NULL) {
         mFreqFirstCharMap =  new FreqFirstCharMap(*this, minCharCount);
@@ -274,8 +274,8 @@ void CharFreqMap::initTableNaturalOrder(uint *charToIndexPtr, uint minCharCount)
     }
 }
 
-/** Order the char-to-index table by descending char frequencies. 
-*  The most frequent char gets index 0, second-most gets 1, etc.   
+/** Order the char-to-index table by descending char frequencies.
+*  The most frequent char gets index 0, second-most gets 1, etc.
 **/
 void CharFreqMap::initTableFrequencyOrder(uint *freqCharToIndexPtr, uint minCharCount)	const
 {
