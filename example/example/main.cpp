@@ -47,7 +47,6 @@ struct hashTableChrStr {
             h = 31*h + *p++;
         }
         h %= MAXHASH;
-        
         size_t ini = h;
         while (tab[h] && strcmp(tab[h], s)) {
             h = (h + 1) % MAXHASH;
@@ -66,10 +65,10 @@ struct hashChrStr {
     {
         unsigned long hash = 5381;
         int c;
-        
+
         while ((c = *str++))
             hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
-        
+
         return hash;
     }
 };
@@ -142,7 +141,5 @@ int main(int argc, const char * argv[]) {
     string ago_s = ago_a;
     cout << "Is another string 'ago' in std_string_words? " << std_string_words.count(ago_s) << endl;
 
-
-    
     return 0;
 }
